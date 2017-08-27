@@ -1,9 +1,52 @@
 body{
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 
 table{
-  border: 1px solid black;
-  margin: auto;
+border: 1px solid black;
+margin: auto;
+margin-top: 130px;
 }
+
+td{
+ background: #181818;
+ padding: 10px;
+}
+
+tr{
+  color: white;
+}
+
+td:hover{
+  color: #a0a0a0;
+}
+
+
+td a:hover{
+ text-decoration: none;
+ color: whitesmoke;
+}
+
+
+#numero{
+  padding-right: 50px;
+}
+
+#artista{
+  padding-right: 350px;
+}
+
+#video{
+  padding-right: 150px
+}
+
+/*a{
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  float: right;
+  margin-right: 100px;
+}*/
