@@ -2,50 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Single page application</title>
+    <title>Top 5 SPA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <div class="container">
-      <table>
-        <thead>
-            <th id="numero">#</th>
-            <th id="artista">Artista</th>
-            <th id="video">Vídeo</th>
-        </thead>
-        <tbody>
-            <tr id="uno">
-              <td>1</td>
-              <td>Justin Biever - Friends</td>
-              <td><a href="">Vídeo</td></a>
-            </tr>
-            <tr id="dos">
-              <td>2</td>
-              <td>P!nk - What about us</td>
-              <td>Vídeo</td>
-            </tr>
-            <tr id="dosmedios">
-              <td>3</td>
-              <td>Rudimental - Trouble</td>
-              <td>Vídeo</td>
-            </tr>
-            <tr id="tres">
-              <td>4</td>
-              <td>Camila Cabello - Havana</td>
-              <td>Vídeo</td>
-            </tr>
-            <tr id="tres">
-              <td>5</td>
-              <td>Taylor Swift - Look what you do</td>
-              <td>Vídeo</td>
-            </tr>
-        </tbody>
-      </table>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="app/app.js">
-
+    <script id="entry-template" type="text/x-handlebars-template">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Artista</th>
+            <th>Vídeo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each music}}
+          <tr>
+            <td>{{enumeracion @index '+' 1 . this.numero}}</td>
+            <td>{{this.artista}}</td>
+            <td><iframe width="60" height="35" src={{this.video}} frameborder="0" allowfullscreen>}}</td></iframe>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
     </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
+    <script src="app/app.js"></script>
   </body>
 </html>
