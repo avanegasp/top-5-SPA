@@ -2,40 +2,62 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Top 5 SPA</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <title>Single page application</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <header>
+    <h1>TOP 5 SPA</h1>
+  </header>
   <body>
-
     <div class="container">
+      <ul class="track-list">
+        <li class="track-row">
+          <div class="track-row-number">1</div>
+          <div class="track-row-info">Friends
+            <div class="track-artist">Justin Bieber</div>
+          </div>
+          <div  class="video"><iframe width="60" height="35" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></div></iframe>
+        </li>
+        <li class="track-row">
+          <div class="track-row-number">2</div>
+          <div class="track-row-info">Taylor Swift
+            <div class="track-artist">Look What You Made Me Do</div>
+          </div>
+          <div  class="video"><iframe width="60" height="35" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></div></iframe>
+        </li>
+        <li class="track-row">
+          <div class="track-row-number">3</div>
+          <div class="track-row-info">Havana
+            <div class="track-artist">Camila Cabello</div>
+          </div>
+          <div  class="video"><iframe width="60" height="35" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></div></iframe>
+        </li>
+        <li class="track-row">
+          <div class="track-row-number">4</div>
+          <div class="track-row-info">Summer Air
+            <div class="track-artist">ItaloBrothers</div>
+          </div>
+          <div  class="video"><iframe width="60" height="35" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></div></iframe>
+        </li>
+        <li class="track-row">
+          <div class="track-row-number">5</div>
+          <div class="track-row-info">Showdown
+            <div class="track-artist">Maddix, LoaX</div>
+          </div>
+          <div  class="video"><iframe width="60" height="35" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></div></iframe>
+        </li>
+      </ul>
     </div>
 
-    <script id="entry-template" type="text/x-handlebars-template">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Número</th>
-            <th>Artista</th>
-            <th>Vídeo</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each music}}
-          <tr>
-            <td>{{enumeracion @index '+' 1 . this.numero}}</td>
-            <td>{{this.artista}}</td>
-            <td><iframe width="60" height="35" src={{this.video}} frameborder="0" allowfullscreen>}}</td></iframe>
-          </tr>
-          {{/each}}
-        </tbody>
-      </table>
-    </script>
-
-
+    <!-- <ul id="listas">
+      	<li>Elemento lista 1</li>
+      	<li>Elemento lista 2</li>
+      	<li>Elemento lista 3</li>
+    </ul>
+    <input type="button" id="boton" value="Recorrer lista"> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/handlebarsjs/4.0.8/handlebars.min.js"></script>
-    <script src="app/app.js"></script>
+    <script type="text/javascript" src="app/app.js">
+    </script>
   </body>
 </html>
