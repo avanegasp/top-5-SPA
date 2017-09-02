@@ -1,16 +1,18 @@
-$('tr#uno').click(function(){
-  $('tr.dos').append('<td><a href ="<iframe width="640" height="360" src="https://www.youtube.com/embed/M7wo0BeN7Fw" frameborder="0" allowfullscreen></iframe>"</td>')
 
-});
+$('.track-row').click(function(event){
+  $('.track-row').toggle()
+  var embedValue = $(event.currentTarget).data('angie')
+  $(`<iframe width="640"
+  height="360" src="${embedValue}"
+  frameborder="0" allowfullscreen></iframe>`).appendTo('.video')
+  console.log('hasta acá');
+
+})
 
 
-
-
-
-// $(document).ready(function(){
-//         $("tr").click(function(){
-// 		    $("td").each(function(){
-//         	    alert($(this).text())
-//         	});
-// 	});
-// });
+// $('.track-row-number').click(function(){
+//   $('.track-row').toggle()
+//   // $('.one').css('display', 'none')
+//   $('.one').show('slow')
+//
+// })
