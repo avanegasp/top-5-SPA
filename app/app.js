@@ -7,3 +7,8 @@ $('.track-row').click(function(event){
     height="360" src="${embedValue}"
     frameborder="0" allowfullscreen></iframe>`).appendTo('.video')
 })
+
+$('.devolver').click(function(){
+  $('.track-row').show()
+  $('.video').hide()
+})
