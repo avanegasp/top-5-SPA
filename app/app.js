@@ -1,14 +1,13 @@
 
+  $('.track-row').click(function(event){
+    $('.video').show()
+    $('.track-row').hide()
+    var embedValue = $(event.currentTarget).data('name')
+      // $(``).appendTo('.video')
+    $('#videoShow').attr('src', embedValue)
+  })
 
-$('.track-row').click(function(event){
-  $('.track-row').toggle()
-  var embedValue = $(event.currentTarget).data('name')
-    $(`<iframe width="640"
-    height="360" src="${embedValue}"
-    frameborder="0" allowfullscreen></iframe>`).appendTo('.video')
-})
-
-$('.devolver').click(function(){
-  $('.track-row').show()
-  $('.video').hide()
-})
+  $('.devolver').click(function(){
+    $('.track-row').show()
+    $('.video').hide()
+  })
