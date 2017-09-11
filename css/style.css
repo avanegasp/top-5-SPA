@@ -1,69 +1,14 @@
-body{
-margin: 0;
-padding: 0;
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
 }
 
-.container{
-  margin-top: 100px;
-  position: relative;
-  margin-left: 300px;
-  margin-right: 300px;
+.movie { display: none; }
+
+.movie iframe {
+  width: 100%;
 }
 
-.track-list{
-  list-style-type: none;
-}
-
-.track-row{
-  position: relative;
-  height: 50px;
-  background-color: #181818;
-  cursor: pointer;
-}
-
-.track-row:hover{
-  background-color: #8DF1BC;
-  transition: background-color .4s;
-              transition-property: background-color;
-              transition-duration: 0.4s;
-              transition-timing-function: initial;
-              transition-delay: initial;
-}
-
-.track-row-number{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 45px;
-  text-align: center;
-  line-height: 45px;
-  color: #a0a0a0;
-}
-
-.track-row-info{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: absolute;
-  top: 0;
-  left: 45px;
-  right: 45px;
-  bottom: 0;
-  text-align: left;
-  color: #fff;
-  padding-top: 9px;
-}
-
-.track-row-info .track-artist{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-top: 3px;
-  font-size: 12px;
-  color: #a0a0a0;
-}
-
-.video{
-  display: none;
+tr:hover{
+  background-color: #32e272;
 }

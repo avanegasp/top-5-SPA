@@ -3,51 +3,113 @@
   <head>
     <meta charset="utf-8">
     <title>Single page application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <header>
     <h1>TOP 5 SPA</h1>
   </header>
   <body>
-    <div class="container">
-      <div class="video">
-        <iframe id="videoShow" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
+    <section id="list">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>Mis canciones favoritas</h1>
+            <table class="table table-inverse">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Justin Bieber - Friends</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Camila Cabello - Havana</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Taylor Swift - Look What You Make Me Do</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Avicci - With Out You</td>
+                </tr><tr>
+                  <td>5</td>
+                  <td>Michael Jackson - Blood On The Dance Floor X Dangerous</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      <ul class="track-list">
-        <li class="track-row" data-name='https://www.youtube.com/embed/ctfLLsD84vk'>
-          <div class="track-row-number">1</div>
-          <div class="track-row-info">Friends
-            <div class="track-artist">Justin Bieber</div>
-          </div>
-        </li>
-        <li class="track-row" data-name='https://www.youtube.com/embed/3tmd-ClpJxA'>
-          <div class="track-row-number">2</div>
-          <div class="track-row-info">Taylor Swift
-            <div class="track-artist">Look What You Made Me Do</div>
-          </div>
-        </li>
-        <li class="track-row" data-name='https://www.youtube.com/embed/ctfLLsD84vk'>
-          <div class="track-row-number">3</div>
-          <div class="track-row-info">Havana
-            <div class="track-artist">Camila Cabello</div>
-          </div>
-        </li>
-        <li class="track-row" data-name='https://www.youtube.com/embed/VCVjbrt30tY'>
-          <div class="track-row-number" >4</div>
-          <div class="track-row-info">Summer Air
-            <div class="track-artist">ItaloBrothers</div>
-          </div>
-        </li>
-        <li class="track-row" data-name='https://www.youtube.com/embed/ctfLLsD84vk'>
-          <div class="track-row-number">5</div>
-          <div class="track-row-info">Showdown
-            <div class="track-artist">Maddix, LoaX</div>
-          </div>
-        </li>
-      </ul>
-      <button class="devolver">DEVOLVER</button>
-    </div>
+    </section>
 
+    <section class="movie mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>1. Justin Bieber - Friends</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ctfLLsD84vk" frameborder="0" allowfullscreen></iframe>
+            <button class="btn btn-link back">Volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movie mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>2. Camila Cabello - Havana</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HCjNJDNzw8Y" frameborder="0" allowfullscreen></iframe>
+            <button class="btn btn-link back">Volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movie mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>3. Taylor Swift - Look What You Make Me Do</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3tmd-ClpJxA" frameborder="0" allowfullscreen></iframe>
+            <button class="btn btn-link back">Volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movie mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>4. Avicci - With Out You</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WRz2MxhAdJo" frameborder="0" allowfullscreen></iframe>
+            <button class="btn btn-link back">Volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movie mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <h1>5. Michael Jackson - Blood On The Dance Floor X Dangerous</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aXfokSKZ0QA" frameborder="0" allowfullscreen></iframe>
+            <button class="btn btn-link back">Volver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="app/app.js">
     </script>

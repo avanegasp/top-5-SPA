@@ -1,13 +1,10 @@
 
-  $('.track-row').click(function(event){
-    $('.video').show()
-    $('.track-row').hide()
-    var embedValue = $(event.currentTarget).data('name')
-      // $(``).appendTo('.video')
-    $('#videoShow').attr('src', embedValue)
-  })
+$('td').click(function(){
+  $('#list').hide()
+  $('.movie').show()
+})
 
-  $('.devolver').click(function(){
-    $('.track-row').show()
-    $('.video').hide()
-  })
+$('button').click(function(){
+  $('#list').show()
+  $('.movie').hide()
+})
