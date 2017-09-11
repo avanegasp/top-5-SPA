@@ -9,6 +9,14 @@ h1 {
   width: 100%;
 }
 
+iframe {
+  display: block;
+}
+
+.music{
+  display: none;
+}
+
 tr:hover{
   background-color: #32e272;
 }

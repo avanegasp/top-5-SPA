@@ -1,10 +1,10 @@
 
 $('td').click(function(){
   $('#list').hide()
-  $('.movie').show()
+  $('.music').show()
 })
 
 $('button').click(function(){
   $('#list').show()
-  $('.movie').hide()
+  $('.music').hide()
 })
