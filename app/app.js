@@ -4,46 +4,30 @@
     $('.music').show()
   })
 
-  if($('.uno').click(function(){
+  $('.uno').click(function(){
+    $('.music').hide()
     $('#uno').show()
-    $('#dos').hide()
-    $('#tres').hide()
-    $('#cuatro').hide()
-    $('#cinco').hide()
-  }))
+  })
 
-  if($('.dos').click(function(){
+  $('.dos').click(function(){
+    $('.music').hide()
     $('#dos').show()
-    $('#uno').hide()
-    $('#tres').hide()
-    $('#cuatro').hide()
-    $('#cinco').hide()
-  }))
+  })
 
-  if($('.tres').click(function(){
+  $('.tres').click(function(){
+    $('.music').hide()
     $('#tres').show()
-    $('#uno').hide()
-    $('#dos').hide()
-    $('#cuatro').hide()
-    $('#cinco').hide()
-  }))
+  })
 
-  if($('.cuatro').click(function(){
+  $('.cuatro').click(function(){
+    $('.music').hide()
     $('#cuatro').show()
-    $('#uno').hide()
-    $('#dos').hide()
-    $('#tres').hide()
-    $('#cinco').hide()
-  }))
+  })
 
-  if($('.cinco').click(function(){
+  $('.cinco').click(function(){
+    $('.music').hide()
     $('#cinco').show()
-    $('#uno').hide()
-    $('#dos').hide()
-    $('#tres').hide()
-    $('#cuatro').hide()
-  }))
-
+  })
 
   $('button').click(function(){
     $('#list').show()
