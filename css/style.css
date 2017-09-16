@@ -3,20 +3,24 @@ h1 {
   margin-bottom: 25px;
 }
 
-.movie { display: none; }
-
-.movie iframe {
-  width: 100%;
-}
-
-iframe {
-  display: block;
-}
-
-.music{
+.music {
   display: none;
 }
 
+.music iframe {
+  width: 100%;
+}
+
+.active{
+  display: block;
+}
+
+
 tr:hover{
   background-color: #32e272;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
 }
