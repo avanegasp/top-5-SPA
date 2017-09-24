@@ -1,6 +1,13 @@
-h1 {
+h1{
   font-size: 1.8rem;
   margin-bottom: 25px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .music {
@@ -11,16 +18,18 @@ h1 {
   width: 100%;
 }
 
-.active{
-  display: block;
-}
-
-
 tr:hover{
   background-color: #32e272;
   cursor: pointer;
 }
 
-button{
+button {
   cursor: pointer;
+  margin-left: 800px;
+}
+
+iframe {
+  height: 315px;
+  margin-left: 400px;
+  width: 560px;
 }
